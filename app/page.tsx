@@ -1,10 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import BookCarousel from "@/components/BookCarousel";
-import AboutSection from "@/components/AboutSection";
-import OptimizedImage from "@/components/ui/image";
+import { Button, Card, CardContent, OptimizedImage } from "@/components/ui";
+import { BookCarousel, AboutSection } from "@/components/sections";
 
 export default function Home() {
   return (
@@ -21,8 +17,9 @@ export default function Home() {
                 src="/la-maison-bleue.jpg"
                 alt="La maison bleue - André Lautier"
                 fill
-                className="object-contain"
                 priority
+                containerClassName="h-[375px] w-[250px]"
+                className="object-cover"
               />
             </div>
             <div className="flex flex-col justify-center">
@@ -81,6 +78,7 @@ export default function Home() {
                   src="/actualite-1.jpg"
                   alt="Un nouveau roman en préparation"
                   fill
+                  containerClassName="h-64 w-full"
                   className="object-cover"
                 />
               </div>
@@ -113,6 +111,7 @@ export default function Home() {
                   src="/actualite-2.jpg"
                   alt="Bienvenue sur mon site"
                   fill
+                  containerClassName="h-64 w-full"
                   className="object-cover"
                 />
               </div>
@@ -144,6 +143,7 @@ export default function Home() {
                   src="/actualite-3.jpg"
                   alt="Salon du livre de Maringues"
                   fill
+                  containerClassName="h-64 w-full"
                   className="object-cover"
                 />
               </div>

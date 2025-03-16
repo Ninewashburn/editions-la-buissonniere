@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import OptimizedImage from "@/components/ui/image";
+import { OptimizedImage } from "@/components/ui";
 
 // Import Swiper styles
 import "swiper/css";
@@ -62,10 +61,10 @@ export default function Biographie() {
             <div className="relative aspect-[4/5] w-full max-w-sm mx-auto">
               <OptimizedImage
                 src="/biographie-andre-lautier.jpg"
-                alt="André Lautier"
+                alt="André Lautier - Biographie"
                 fill
+                containerClassName="w-full h-full"
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           </div>
@@ -203,6 +202,7 @@ export default function Biographie() {
                           alt={book.title}
                           fill
                           className="object-cover"
+                          containerClassName="w-[180px] h-[270px]"
                         />
                       </div>
                     </div>

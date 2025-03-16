@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { OptimizedImage } from "@/components/ui";
 
 // Données simulées pour les actualités
 const actualites = [
@@ -48,12 +48,12 @@ export default function Actualites() {
           >
             <div className="w-full md:w-1/3 shrink-0">
               <div className="relative aspect-[4/3] w-full">
-                <Image
+                <OptimizedImage
                   src={actualite.image}
                   alt={actualite.title}
                   fill
+                  containerClassName="w-full h-full aspect-[4/3]"
                   className="object-cover"
-                  priority
                 />
               </div>
             </div>

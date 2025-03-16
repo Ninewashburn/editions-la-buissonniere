@@ -1,9 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat, Playfair_Display } from "next/font/google";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import { ScrollToTop } from "@/components/ui/scroll-to-top";
+import { Header, Footer } from "@/components/layout";
+import { ScrollToTop } from "@/components/ui";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

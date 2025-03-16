@@ -2,8 +2,7 @@
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import OptimizedImage from "@/components/ui/image";
-import OptimizedIcon from "@/components/ui/icon";
+import { OptimizedImage, OptimizedIcon } from "@/components/ui";
 import { Facebook, Twitter, Mail, ChevronUp, ChevronLeft } from "lucide-react";
 
 // Données simulées pour les actualités
@@ -113,8 +112,8 @@ export default function ActualitePage({
                 src={actualite.image}
                 alt={actualite.title}
                 fill
-                className="object-cover"
-                priority
+                containerClassName="w-full h-full"
+                className="object-cover rounded-lg"
               />
             </div>
           </div>

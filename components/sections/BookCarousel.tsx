@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
+import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Image from "next/image";
-import Link from "next/link";
-import OptimizedImage from "@/components/ui/image";
+import { OptimizedImage } from "@/components/ui";
 
 // Import Swiper styles
 import "swiper/css";
@@ -109,6 +108,7 @@ export default function BookCarousel() {
                         alt={book.title}
                         fill
                         className="object-cover"
+                        containerClassName="w-[200px] h-[300px]"
                       />
                     </div>
                   </div>
