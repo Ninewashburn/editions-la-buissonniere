@@ -1,0 +1,21 @@
+# Éditions La Buissonnière - Fichier robots.txt
+# https://editionslabuissonniere.fr
+
+# Autoriser tous les robots
+User-agent: *
+Allow: /
+
+# Interdire l'accès aux pages administratives
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login/
+Disallow: /cpanel/
+Disallow: /dashboard/
+
+# Interdire l'accès aux répertoires spécifiques
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Sitemap
+Sitemap: https://editionslabuissonniere.fr/sitemap.xml 

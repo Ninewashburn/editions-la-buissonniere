@@ -7,4 +7,5 @@
 import OptimizedIcon from "./icon";
 export { OptimizedIcon };
 export { SectionTitle } from "./section-title";
-export { IconLink } from "./icon-link"; 
+export { IconLink } from "./icon-link";
+export { ScrollToTop } from "./scroll-to-top"; 
